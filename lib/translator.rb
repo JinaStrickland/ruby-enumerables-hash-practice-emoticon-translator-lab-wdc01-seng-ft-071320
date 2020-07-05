@@ -14,13 +14,13 @@ def load_library(file_path)
   emoticons_list = YAML.load_file(file_path)
   emoticons_list.each do |key, value|
       {
-        key =>  {
+        key_one =>  {
           :english => value[0],
           :japanese => value[1]
           }
         }
-      revised_emoticons = emoticons_list
-    #binding.pry
+
+    binding.pry
   end
 end
 
