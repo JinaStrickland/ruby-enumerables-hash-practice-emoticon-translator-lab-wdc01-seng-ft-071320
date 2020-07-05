@@ -12,7 +12,13 @@ require "yaml"
 def load_library(file_path)
   emoticons_list = YAML.load_file(file_path)
   emoticons_list.each do |key, value|
-    value.each do |inner_key, inner_value|
+    {
+      key =>  {
+          :english => value[0],
+          :japanese => value[1]
+        }
+    }
+
     binding.pry
   end
 end
