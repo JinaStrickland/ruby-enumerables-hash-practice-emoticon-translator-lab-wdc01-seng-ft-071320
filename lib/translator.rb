@@ -15,10 +15,6 @@ def load_library(file_path)
     value.each do |name, emoticons|
     binding.pry
       emoticons.each do |emoticon|
-
-binding.pry
-  p file_path
-  final_array
   end
 end
 
