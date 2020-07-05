@@ -19,9 +19,9 @@ def load_library(file_path)
           :japanese => value[1]
           }
         }
+      end
     p file_path
     binding.pry
-  end
 end
 
 # value.each do |name, emoticons|
