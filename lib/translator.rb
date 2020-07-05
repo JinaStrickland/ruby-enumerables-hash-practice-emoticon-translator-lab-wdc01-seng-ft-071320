@@ -26,7 +26,13 @@ end
 
 
 def get_japanese_emoticon
-
+  thelist = load_library(file_path)
+  thelist.each do |key, value|
+    if value[:japanese] == emoticon
+      return key
+    end
+  end
+  return "Sorry, that emoticon was not found"
 end
 
 
