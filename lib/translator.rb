@@ -15,8 +15,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   thelist = load_library(file_path)
-  thelist.each do |k, v|
-    v = emoticon
+  thelist[emoticon]
   binding.pry
 
 end
