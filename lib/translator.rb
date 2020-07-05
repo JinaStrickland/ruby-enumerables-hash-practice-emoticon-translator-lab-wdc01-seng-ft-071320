@@ -15,8 +15,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   thelist = load_library(file_path)
-  binding.pry
-  thelist[key]
+  thelist[emoticon]
   binding.pry
 
 end
