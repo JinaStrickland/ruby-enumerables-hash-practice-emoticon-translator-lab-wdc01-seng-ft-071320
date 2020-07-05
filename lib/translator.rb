@@ -19,7 +19,7 @@ def load_library(file_path)
           :japanese => value[1]
           }
         }
-      revised_emoticons = emoticons[key][value]
+   emoticons[key][value]
     binding.pry
   end
 end
