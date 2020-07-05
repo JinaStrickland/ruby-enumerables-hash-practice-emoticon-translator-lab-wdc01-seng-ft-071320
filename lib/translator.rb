@@ -2,25 +2,31 @@ require 'pry'
 require "yaml"
 
 def load_library(file_path)
-  file = YAML.load_file('./lib/emoticons.yml')
-  file.map do | key, value |
-binding.pry
-  {
-      "#{key}" =>  {
-      :english => value[0],
-      :japanese => value[1]
-        }
-      }
-file.map { |k, v| [k, v]}.to_h
-
-has = hash[array.collect { |item| [item, "value"]}]
-
+ file = YAML.load_file
+p File.read
 end
-binding.pry
-file
+
+#   file = YAML.load_file('./lib/emoticons.yml')
+#   file.map do | key, value |
+# binding.pry
+#   {
+#       "#{key}" =>  {
+#       :english => value[0],
+#       :japanese => value[1]
+#         }
+#       }
+#
+# file.map { |k, v| [k, v]}.to_h
+#
+# hash = hash[array.collect { |item| [item, "value"]}]
+#
+#
+# end
+# binding.pry
+# file
 
 #binding.pry
-end
+#end
 
 
 def get_japanese_emoticon
