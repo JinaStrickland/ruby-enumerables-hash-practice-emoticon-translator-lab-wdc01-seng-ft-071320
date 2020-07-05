@@ -13,6 +13,7 @@ def load_library(file_path)
  emoticons_list = YAML.load_file(file_path)
   emoticons_list.each_with_object({}) do |(key, value), final_result|
     value.each do |name, emoticons|
+    binding.pry
       emoticons.each do |emoticon|
 
 binding.pry
