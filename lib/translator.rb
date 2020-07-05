@@ -14,7 +14,7 @@ def load_library(file_path)
   emoticons_list = YAML.load_file(file_path)
   emoticons_list.each do |key, value|
       {
-        key_one =>  {
+        key =>  {
           :english => value[0],
           :japanese => value[1]
           }
