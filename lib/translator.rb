@@ -11,8 +11,6 @@ require "yaml"
 def load_library(file_path)
  emoticons = YAML.load_file(file_path)
   emoticons.each_with_object({}) do |(key, value), final_result|
-    new_hash[value.collect { |item| [item, "value"]}]
-
 
 binding.pry
   p file_path
@@ -21,10 +19,8 @@ binding.pry
 end
 
 
-#   file = YAML.load_file('./lib/emoticons.yml')
-#   file.map do | key, value |
-# binding.pry
-#   {
+#   emoticons.map do | key, value |
+#      {
 #       "#{key}" =>  {
 #       :english => value[0],
 #       :japanese => value[1]
