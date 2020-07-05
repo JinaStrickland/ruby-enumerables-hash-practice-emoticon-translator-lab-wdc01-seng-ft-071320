@@ -6,12 +6,12 @@ require "yaml"
 #   p file_path
 #  end
 
- hash = hash[array.collect { |item| [item, "value"]}]
+
 
 def load_library(file_path)
  emoticons = YAML.load_file(file_path)
   emoticons.each_with_object({}) do |(key, value), final_result|
-    value.map { |k, v| [k, v]}.to_h
+    new_hash[value.collect { |item| [item, "value"]}]
 
 
 binding.pry
