@@ -7,7 +7,6 @@ def load_library(file_path)
   emoticons_list.each do |key, value|
     revised_emoticons[key] = {}
       revised_emoticons[key][:english] = value[0]
-        binding.pry
       revised_emoticons[key][:japanese] = value[1]
         binding.pry
     end
