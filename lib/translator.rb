@@ -2,7 +2,7 @@ require 'pry'
 require "yaml"
 
 def load_library(file_path)
- file_path = YAML.load_file
+ file_path = YAML.load_file('./lib/emoticons.yml')
 #  p file_path
 # end
   file_path.each_with_object({}) do |(key, value), final_array|
