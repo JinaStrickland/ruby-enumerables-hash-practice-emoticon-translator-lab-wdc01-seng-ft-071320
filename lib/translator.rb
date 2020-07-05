@@ -19,7 +19,7 @@ def get_english_meaning(file_path, emoticon)
     if value[:japanese] == emoticon
       key
     end
-  end 
+  end
 end
 
 
