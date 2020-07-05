@@ -11,6 +11,7 @@ require "yaml"
 
 def load_library(file_path)
   emoticons_list = YAML.load_file(file_path)
+  revised_emoticons = {}
   emoticons_list.each do |key, value|
     {
       key =>  {
