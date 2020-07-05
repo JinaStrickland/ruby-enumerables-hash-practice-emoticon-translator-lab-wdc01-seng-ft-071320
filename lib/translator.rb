@@ -20,7 +20,7 @@ def load_library(file_path)
           }
         }
     revised_emoticons[key][value]
-        #binding.pry
+        binding.pry
       end
     p file_path
 end
