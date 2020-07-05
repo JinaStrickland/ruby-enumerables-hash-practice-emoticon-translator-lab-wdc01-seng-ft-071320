@@ -13,10 +13,10 @@ def load_library(file_path)
 end
 
 
-def get_english_meaning(file_path, emoticon)
+def get_english_meaning(file_path, japemoticon)
   thelist = load_library(file_path)
   thelist.each do |key, value|
-    if value[:japanese] == emoticon
+    if value[:japanese] == japemoticon
       return key
     end
   end
@@ -25,10 +25,11 @@ end
 
 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path, engemoticon)
   thelist = load_library(file_path)
   thelist.each do |key, value|
-    if value[:japanese] == emoticon
+    if value[:japanese] == engemoticon
+      binding.pry
       return key
     end
   end
