@@ -18,7 +18,7 @@ def get_english_meaning(file_path, emoticon)
   thelist.each do |key, value|
   binding.pry
   thelist[emoticon]
-
+end
 
 end
 
