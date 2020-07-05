@@ -24,7 +24,6 @@ def get_english_meaning(file_path, japemoticon)
 end
 
 
-
 def get_japanese_emoticon(file_path, engemoticon)
   thelist = load_library(file_path)
   thelist.each do |key, value|
