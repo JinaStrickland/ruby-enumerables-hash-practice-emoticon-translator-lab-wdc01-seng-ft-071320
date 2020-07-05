@@ -18,7 +18,6 @@ def get_english_meaning(file_path, emoticon)
   binding.pry
   the_list.each do |k, v|
 
-  binding.pry
 end
 
 
