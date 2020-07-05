@@ -13,9 +13,11 @@ def load_library(file_path)
   revised_emoticons = Hash.new
   emoticons_list = YAML.load_file(file_path)
   emoticons_list.each do |key, value|
-
+    revised_emoticons[key] = {}
+      revised_emoticons[key][:english] = value[0]
+      revised_emoticons[key][:japanese] = value[1]
       end
-    file_path
+      revised_emoticons
 end
 
 
