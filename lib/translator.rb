@@ -10,10 +10,10 @@ require "yaml"
 
 
 def load_library(file_path)
-  emoticons_list = YAML.load_file(file_path)
   revised_emoticons = {}
+  emoticons_list = YAML.load_file(file_path)
   emoticons_list.each do |key, value|
-  {
+    {
       key =>  {
           :english => value[0],
           :japanese => value[1]
@@ -28,14 +28,6 @@ end
 # binding.pry
 #   emoticons.each do |emoticon|
 
-#   emoticons.map do | key, value |
-#      {
-#       "#{key}" =>  {
-#       :english => value[0],
-#       :japanese => value[1]
-#         }
-#       }
-#
 # file.map { |k, v| [k, v]}.to_h
 # hash = hash[array.collect { |item| [item, "value"]}]
 
