@@ -10,9 +10,10 @@ require "yaml"
 
 
 def load_library(file_path)
- emoticons = YAML.load_file(file_path)
-  emoticons.each_with_object({}) do |(key, value), final_result|
-    value.each do 
+ emoticons_list = YAML.load_file(file_path)
+  emoticons_list.each_with_object({}) do |(key, value), final_result|
+    value.each do |name, emoticon|
+      emoticon.each do |
 
 binding.pry
   p file_path
