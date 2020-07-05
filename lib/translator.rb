@@ -10,7 +10,7 @@ require "yaml"
 def load_library(file_path)
  emoticons = YAML.load_file(file_path)
   emoticons.each_with_object({}) do |(key, value), final_result|
-    value.each_with_object({}) do |(inner_key, inner_value), inner_result|
+    value.each_with_object({}) do |(inner_key, inner_value)|
 
 binding.pry
   p file_path
