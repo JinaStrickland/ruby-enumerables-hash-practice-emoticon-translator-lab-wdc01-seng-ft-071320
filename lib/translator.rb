@@ -1,11 +1,11 @@
 require 'pry'
 require "yaml"
 
-def load_library(file_path)
-  emoticons = YAML.load_file(file_path)
-  binding.pry
-  p file_path
- end
+# def load_library(file_path)
+#   emoticons = YAML.load_file(file_path)
+#   binding.pry
+#   p file_path
+#  end
 
 
 
