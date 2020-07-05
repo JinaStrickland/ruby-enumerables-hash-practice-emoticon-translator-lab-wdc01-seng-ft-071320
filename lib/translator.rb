@@ -13,18 +13,18 @@ def load_library(file_path)
 end
 
 
-def get_english_meaning(file_path, emoticon)
-  load_library(file_path)
-  binding.pry
-  the_list.each do |k, v|
-
-end
-
-
-
-def get_japanese_emoticon
-#binding.pry
-end
+# def get_english_meaning(file_path, emoticon)
+#   load_library(file_path)
+#   binding.pry
+#   the_list.each do |k, v|
+#
+# end
+#
+#
+#
+# def get_japanese_emoticon
+# #binding.pry
+# end
 
 
 
