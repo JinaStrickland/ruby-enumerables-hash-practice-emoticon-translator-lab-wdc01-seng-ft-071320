@@ -5,10 +5,12 @@ def load_library(file_path)
 #  file_path = YAML.load_file
 #  p file_path
 # end
+  file_path.each_with_object({}) do |(key, value), final_array|
+binding.pry
 
-
-
-
+f   inal_array
+  end
+end
 #   file = YAML.load_file('./lib/emoticons.yml')
 #   file.map do | key, value |
 # binding.pry
