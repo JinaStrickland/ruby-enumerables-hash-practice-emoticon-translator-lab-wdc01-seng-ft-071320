@@ -16,9 +16,9 @@ end
 #         }
 #       }
 #
-# file.map { |k, v| [k, v]}.to_h
-#
-# hash = hash[array.collect { |item| [item, "value"]}]
+file.map { |k, v| [k, v]}.to_h
+
+hash = hash[array.collect { |item| [item, "value"]}]
 #
 #
 # end
