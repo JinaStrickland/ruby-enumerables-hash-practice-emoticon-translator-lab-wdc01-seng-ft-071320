@@ -12,6 +12,7 @@ require "yaml"
 def load_library(file_path)
   emoticons_list = YAML.load_file(file_path)
   emoticons_list.each do |(key, value), final_result|
+    binding.pry
   end
 end
 
