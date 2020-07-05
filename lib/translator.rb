@@ -15,10 +15,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   thelist = load_library(file_path)
-  v = emoticon
-  binding.pry
   thelist.each do |k, v|
-    thelist[]
     v = emoticon
   binding.pry
 
