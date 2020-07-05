@@ -23,7 +23,6 @@ def load_library(file_path)
         binding.pry
       end
     p file_path
-    binding.pry
 end
 
 # value.each do |name, emoticons|
