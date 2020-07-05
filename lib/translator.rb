@@ -13,7 +13,7 @@ def load_library(file_path)
 end
 
 
-def get_english_meaning(file_path, revised_emoticons)
+def get_english_meaning(file_path, emoticons)
   binding.pry
 end
 
