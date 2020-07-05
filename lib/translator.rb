@@ -8,18 +8,9 @@ def load_library(file_path)
     revised_emoticons[key] = {}
       revised_emoticons[key][:english] = value[0]
       revised_emoticons[key][:japanese] = value[1]
-        binding.pry
     end
   revised_emoticons
 end
-
-
-# {
-#   key =>  {
-#     :english => value[0],
-#     :japanese => value[1]
-#     }
-#   }
 
 
 def get_japanese_emoticon
@@ -30,3 +21,14 @@ def get_english_meaning
 
 end
 #binding.pry
+
+
+
+
+
+# {
+#   key =>  {
+#     :english => value[0],
+#     :japanese => value[1]
+#     }
+#   }
