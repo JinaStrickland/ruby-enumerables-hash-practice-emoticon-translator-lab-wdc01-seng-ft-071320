@@ -12,7 +12,8 @@ require "yaml"
 def load_library(file_path)
  emoticons = YAML.load_file(file_path)
   emoticons.each_with_object({}) do |(key, value), final_result|
-    inner_hash = value[0]
+    inner_hash_one = value[0]
+    inner_has_two = value[1]
 
 binding.pry
   p file_path
