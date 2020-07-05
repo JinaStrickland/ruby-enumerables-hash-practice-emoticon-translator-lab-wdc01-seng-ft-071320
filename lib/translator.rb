@@ -19,7 +19,7 @@ def load_library(file_path)
         }
     }
 
-    binding.pry
+    #binding.pry
   end
 end
 
