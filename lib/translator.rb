@@ -1,23 +1,24 @@
 require 'pry'
 require "yaml"
 
-# def load_library(file_path)
-#   emoticons = YAML.load_file(file_path)
-#   p file_path
-#  end
-
-
-
 def load_library(file_path)
- emoticons = YAML.load_file(file_path)
-  emoticons.each_with_object({}) do |(key, value), final_result|
-    final_result = {}
-
-binding.pry
+  emoticons = YAML.load_file(file_path)
+  binding.pry
   p file_path
-  final_array
-  end
-end
+ end
+
+
+
+# def load_library(file_path)
+#  emoticons = YAML.load_file(file_path)
+#   emoticons.each_with_object({}) do |(key, value), final_result|
+#     final_result = {}
+#
+# binding.pry
+#   p file_path
+#   final_array
+#   end
+# end
 
 
 #   emoticons.map do | key, value |
