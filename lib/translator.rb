@@ -2,9 +2,12 @@ require 'pry'
 require "yaml"
 
 def load_library(file_path)
- file_path = YAML.load_file
- p file_path
-end
+#  file_path = YAML.load_file
+#  p file_path
+# end
+
+
+
 
 #   file = YAML.load_file('./lib/emoticons.yml')
 #   file.map do | key, value |
@@ -16,9 +19,9 @@ end
 #         }
 #       }
 #
-file.map { |k, v| [k, v]}.to_h
-
-hash = hash[array.collect { |item| [item, "value"]}]
+# file.map { |k, v| [k, v]}.to_h
+#
+# hash = hash[array.collect { |item| [item, "value"]}]
 #
 #
 # end
