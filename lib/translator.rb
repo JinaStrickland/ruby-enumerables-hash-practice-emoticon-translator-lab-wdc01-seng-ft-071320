@@ -10,7 +10,7 @@ require "yaml"
 
 
 def load_library(file_path)
-  revised_emoticons = {}
+  revised_emoticons = {new_key, new_value}
   emoticons_list = YAML.load_file(file_path)
   emoticons_list.each do |key, value|
       {
@@ -19,7 +19,6 @@ def load_library(file_path)
           :japanese => value[1]
           }
         }
-        emoticons_list[:key] = value
         binding.pry
       end
     p file_path
